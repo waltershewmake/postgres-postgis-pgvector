@@ -29,4 +29,4 @@ ENV POSTGRES_USER=postgres
 ENV POSTGRES_PASSWORD=postgres
 
 # Set the default command
-CMD ["postgres"]
+CMD ["postgres", "-c", "wal_level=logical"]
